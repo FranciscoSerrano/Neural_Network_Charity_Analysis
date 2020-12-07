@@ -39,10 +39,10 @@ Beks is now ready to put her skills to work to help the foundation predict where
     * I experimented with many layers, neurons and many activation functions
 * Were you able to achieve the target model performance?
     * No I was not able to touch the target model performance of 75%, I was close and touched 73%
-    <br>
+    
     ![](images/optimized_accuracy.png)
-    <br>
+    
 * What steps did you take to try and increase model performance?
     * I worked with the number of neurons, changed some activation functions, worked with number of layers and number of epoches
-    <br>
+    
     ![](images/hiddenlayers.png)
