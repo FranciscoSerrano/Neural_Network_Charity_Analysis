@@ -36,13 +36,18 @@ Beks is now ready to put her skills to work to help the foundation predict where
 
 ## Compiling, Training, and Evaluating the Model
 * How many neurons, layers, and activation functions did you select for your neural network model, and why?
-    * I experimented with many layers, neurons and many activation functions
+    * I chose 2 layers of hidden_nodes for my model to get better deep learning and as I figured more layers may lead to overfitting. The first layer had 80 neurons and the second layer had 30 neurons following the rule of thumb that your first layer should contain roughly 2-3x the amount of inputs that your model contains (43 in this case). As for the activation functions, I chose to use the relu functions fas it simplifies the output. Finally, the Sigmoid function was chosen as the output activation function as it transforms the data to a range between 0 and 1 which makes it easier for the model to classify the whether a business is likely to be successful or not.
+
 * Were you able to achieve the target model performance?
-    * No I was not able to touch the target model performance of 75%, I was close and touched 73%
+    * No I was not able to touch the target model performance of 75%, I was close and touched 73% after multiple attempts through experimentation.
     
     ![](images/optimized_accuracy.png)
     
 * What steps did you take to try and increase model performance?
-    * I worked with the number of neurons, changed some activation functions, worked with number of layers and number of epoches
+    * In order to try and achieve the target 75% performance I tried a couple of things. In my first attempt, I tried to increase the accuracy by increasing the number of neurons in the first and second layers but only got a 58% accuracy. In my second attempt, I tried to reduce the number of "noisy" inputs that I fed to my model, this led to a better accuracy of 62%. Finally, I tried to increase the number of values in each bin to reduce the number of unique values that the model evaluated. Again, my accuracy rating went up to 73% but failed to meet or exceed 75%.
     
     ![](images/hiddenlayers.png)
+
+## Summary
+
+Unfortunately my model output was not able to exceed 75% accuracy. However, the results revealed that there were things that could lead to better model performance. As a recommendation for better model performance we can take a better look at the data introduced in the preprocessing section. Here we can reduce noisy variables such as "STATUS" and exclude them as features. Moreover, it appears that adding more neurons also seems to improve model performance. Finally, it appears that grouping some of the more unique values/making larger bins that group unique values together also leads to better performance. 
